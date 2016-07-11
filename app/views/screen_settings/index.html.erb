@@ -1,0 +1,29 @@
+<h1>Listing screen_settings</h1>
+
+<table>
+  <tr>
+    <th>Screen name</th>
+    <th>Color</th>
+    <th>Title</th>
+    <th>Font</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @screen_settings.each do |screen_setting| %>
+  <tr>
+    <td><%= screen_setting.screen_name %></td>
+    <td><%= screen_setting.color %></td>
+    <td><%= screen_setting.title %></td>
+    <td><%= screen_setting.font %></td>
+    <td><%= link_to 'Show', screen_setting %></td>
+    <td><%= link_to 'Edit', edit_screen_setting_path(screen_setting) %></td>
+    <td><%= link_to 'Destroy', screen_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Screen setting', new_screen_setting_path %>

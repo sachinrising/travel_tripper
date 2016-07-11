@@ -1,0 +1,114 @@
+<div id="main-content" class="container">
+	<div class="jumbotron font-changable color-changable">
+		<h1>My First SPA Page</h1>
+		<p>
+			Resize this responsive page to see the effect!
+		</p>
+	</div>
+	<div class="row font-changable color-changable">
+		<div class="col-sm-4">
+			<h3>Column 1</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+			</p>
+			<p>
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Column 2</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+			</p>
+			<p>
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Column 3</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+			</p>
+			<p>
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+			</p>
+		</div>
+	</div>
+	<div class="row" style="text-align: center">
+		<div class="btn-group">
+			<a id="change-title" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"> Change Document UI Settings </a>
+		</div>
+	</div>
+
+</div>
+<!-- Modal 1 -->
+<div id="myModal1" class="modal fade " role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">Change Document UI Settings</h4>
+			</div>
+			<div class="modal-body">
+				<!-- <p>
+				Enter the title you want to change.
+				<input type="text" style="width: 96%;" value="" id="id-input-title">
+				</p> -->
+
+				<form class="form-horizontal" id="update_setting">
+					<fieldset>
+						<div class="control-group">
+							<label for="id-role" class="control-label">Title</label>
+							<div class="controls">
+								<input type="text" placeholder="Enter Page Title Here" id="screen_setting_title" name="title" class="form-control">
+							</div>
+						</div>
+						<input disabled="disabled" type="hidden" style="display:none" name="name"  id="screen_setting_name" >
+						<input disabled="disabled" type="hidden" style="display:none" name="id"  id="screen_setting_id" >
+
+						<div class="control-group">
+							<label for="id-role" class="control-label">Font Family</label>
+							<div class="controls">
+								<select id="screen_setting_font" class="form-control"  name="font">
+									<option style="font-family: 'Comic Sans MS'">Comic Sans MS</option>
+									<option style="font-family: Arial">Arial</option>
+									<option style="font-family: 'Times New Roman'">Times New Roman</option>
+									<option style="font-family: 'verdana, arial, helvetica, sans-serif'">verdana, arial, helvetica, sans-serif</option>
+									<option style="font-family: 'tangerine'">Tangerine</option>
+									<option style="font-family: 'tahoma'">Tahoma</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="control-group " >
+							<label for="id-email" class="control-label">Background Color</label>
+							<div class="controls">
+								<input type="text" class="form-control jscolor" value="transparent"  placeholder="Enter text color here" id="screen_setting_color" name="color">
+							</div>
+						</div>
+
+						<!-- <div class="control-group " >
+						<label for="id-email" class="control-label">Background Color</label>
+						<div class="controls">
+						<input type="text"  placeholder="Enter text color here" id="screen_setting_bg_color" class="form-control" name="bg_color">
+						<input type="text"  class="jscolor" value="ab2567">
+						</div>
+						</div> -->
+
+					</fieldset>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a id="id-update-title" data-dismiss="modal" class="btn btn-primary"> <i id="id-btn-workflow-add-progress"></i><span>Change</span> </a>
+				<button type="button" id="close-setting-modal" class="btn btn-default" data-dismiss="modal">
+					Close
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>

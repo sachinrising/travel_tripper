@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Screen name:</b>
+  <%= @screen_setting.screen_name %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @screen_setting.color %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @screen_setting.title %>
+</p>
+
+<p>
+  <b>Font:</b>
+  <%= @screen_setting.font %>
+</p>
+
+
+<%= link_to 'Edit', edit_screen_setting_path(@screen_setting) %> |
+<%= link_to 'Back', screen_settings_path %>

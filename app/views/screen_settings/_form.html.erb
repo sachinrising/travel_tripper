@@ -1,0 +1,33 @@
+<%= form_for(@screen_setting) do |f| %>
+  <% if @screen_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@screen_setting.errors.count, "error") %> prohibited this screen_setting from being saved:</h2>
+
+      <ul>
+      <% @screen_setting.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :screen_name %><br />
+    <%= f.text_field :screen_name %>
+  </div>
+  <div class="field">
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :font %><br />
+    <%= f.text_field :font %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

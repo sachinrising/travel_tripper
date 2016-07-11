@@ -1,0 +1,2 @@
+class ScreenSetting < ApplicationRecord
+end
